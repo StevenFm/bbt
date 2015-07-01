@@ -1,3 +1,7 @@
 client/proj.win32/bbt.opensdf
 client/proj.win32/bbt.v11.suo
 client/proj.win32/bbt.sdf
+client/proj.win32/Debug.win32/*
+platform/build/windows/base/X86/*
+platform/build/windows/luna/X86/*
+platform/lib/windows/*
