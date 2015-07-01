@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\CSPRandData.cpp" />
+    <ClCompile Include="..\src\FileHelper.cpp" />
+    <ClCompile Include="..\src\FileIndex.cpp" />
+    <ClCompile Include="..\src\FilePackage.cpp" />
+    <ClCompile Include="..\src\FilePackageMulti.cpp" />
+    <ClCompile Include="..\src\FileTree.cpp" />
+    <ClCompile Include="..\src\IniFile.cpp" />
+    <ClCompile Include="..\src\Log.cpp" />
+    <ClCompile Include="..\src\Md5.cpp" />
+    <ClCompile Include="..\src\minilzo.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\src\NetworkAdapter.cpp" />
+    <ClCompile Include="..\src\SampleSocket.cpp" />
+    <ClCompile Include="..\src\SocketHelper.cpp" />
+    <ClCompile Include="..\src\SocketMgrImpl.cpp" />
+    <ClCompile Include="..\src\StringEncode.cpp" />
+    <ClCompile Include="..\src\TabFile.cpp" />
+    <ClCompile Include="..\src\TextFilter.cpp" />
+    <ClCompile Include="..\src\Thread.cpp" />
+    <ClCompile Include="..\src\ToolFunctions.cpp" />
+    <ClCompile Include="..\src\ValueCoder.cpp" />
+    <ClCompile Include="..\src\WellRand.cpp" />
+    <ClCompile Include="..\src\WinGetOpt.cpp" />
+    <ClCompile Include="..\src\XY_Math.cpp" />
+    <ClCompile Include="..\src\XY_MD5.cpp" />
+    <ClCompile Include="..\src\XY_Rand.cpp" />
+    <ClCompile Include="..\src\XY_Time.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\base\FileHelper.h" />
+    <ClInclude Include="..\..\include\base\FilePackage.h" />
+    <ClInclude Include="..\..\include\base\FilePackageMulti.h" />
+    <ClInclude Include="..\..\include\base\IniFile.h" />
+    <ClInclude Include="..\..\include\base\InterlockedVar.h" />
+    <ClInclude Include="..\..\include\base\Log.h" />
+    <ClInclude Include="..\..\include\base\lzoconf.h" />
+    <ClInclude Include="..\..\include\base\lzodefs.h" />
+    <ClInclude Include="..\..\include\base\minilzo.h" />
+    <ClInclude Include="..\..\include\base\Mutex.h" />
+    <ClInclude Include="..\..\include\base\Base.h" />
+    <ClInclude Include="..\..\include\base\PlatformApple.h" />
+    <ClInclude Include="..\..\include\base\PlatformLinux.h" />
+    <ClInclude Include="..\..\include\base\PlatformWindows.h" />
+    <ClInclude Include="..\..\include\base\Random.h" />
+    <ClInclude Include="..\..\include\base\SampleSocket.h" />
+    <ClInclude Include="..\..\include\base\SocketMgr.h" />
+    <ClInclude Include="..\..\include\base\SocketStreamPacker.h" />
+    <ClInclude Include="..\..\include\base\StringEncode.h" />
+    <ClInclude Include="..\..\include\base\TabFile.h" />
+    <ClInclude Include="..\..\include\base\TextFilter.h" />
+    <ClInclude Include="..\..\include\base\TextMatch.h" />
+    <ClInclude Include="..\..\include\base\Thread.h" />
+    <ClInclude Include="..\..\include\base\ToolFunctions.h" />
+    <ClInclude Include="..\..\include\base\ToolMacros.h" />
+    <ClInclude Include="..\..\include\base\ValueCoder.h" />
+    <ClInclude Include="..\..\include\base\WinGetOpt.h" />
+    <ClInclude Include="..\..\include\base\XY_Math.h" />
+    <ClInclude Include="..\..\include\base\XY_MD5.h" />
+    <ClInclude Include="..\..\include\base\XY_Time.h" />
+    <ClInclude Include="..\src\FileIndex.h" />
+    <ClInclude Include="..\src\FileTree.h" />
+    <ClInclude Include="..\src\Md5.h" />
+    <ClInclude Include="..\src\SocketHelper.h" />
+    <ClInclude Include="..\src\SocketMgrApple.hpp" />
+    <ClInclude Include="..\src\SocketMgrImpl.h" />
+    <ClInclude Include="..\src\SocketMgrLinux.hpp" />
+    <ClInclude Include="..\src\SocketMgrWindows.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CB431074-13AA-498F-AE21-56CF443541F5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>base</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\lib\windows\</OutDir>
+    <IntDir>..\..\build\windows\$(ProjectName)\$(ConfigurationName)X86\</IntDir>
+    <TargetName>$(ProjectName)X86D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\lib\windows\</OutDir>
+    <IntDir>..\..\build\windows\$(ProjectName)\$(ConfigurationName)X86\</IntDir>
+    <TargetName>$(ProjectName)X86</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_BIND_TO_CURRENT_VCLIBS_VERSION;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\include\base;..\..\include\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\include\base;..\..\include\</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
