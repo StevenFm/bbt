@@ -5,3 +5,4 @@ client/proj.win32/Debug.win32/*
 platform/build/windows/base/X86/*
 platform/build/windows/luna/X86/*
 platform/lib/windows/*
+client/Resources/logs/*

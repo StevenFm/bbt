@@ -21,6 +21,51 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\classes\Audio.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\BasicPanel.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\EditBox.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\FightFangKuai.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\FightView.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\FileAssist.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\Layer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\LayerColor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\ScriptFuncs.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\ScrollLayer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\ServerAgent.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\stdafx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\TableView.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\UIManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\WebClient.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -30,6 +75,54 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\Audio.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\BasicPanel.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\EditBox.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\FightFangKuai.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\FightView.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\FileAssist.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\GameDef.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\Layer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\LayerColor.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\ScriptDef.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\ScrollLayer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\ServerAgent.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\stdafx.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\TableView.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\UIManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\WebClient.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

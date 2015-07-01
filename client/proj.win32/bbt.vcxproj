@@ -73,7 +73,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END);$(ProjectDir)..\..\platform\include;$(EngineRoot);$(EngineRoot)external\curl\include\win32\curl</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -86,7 +86,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END);libcurl_imp.lib</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -140,12 +140,43 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\classes\Audio.cpp" />
+    <ClCompile Include="..\classes\BasicPanel.cpp" />
+    <ClCompile Include="..\classes\EditBox.cpp" />
+    <ClCompile Include="..\classes\FightFangKuai.cpp" />
+    <ClCompile Include="..\classes\FightView.cpp" />
+    <ClCompile Include="..\classes\FileAssist.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\classes\Layer.cpp" />
+    <ClCompile Include="..\classes\LayerColor.cpp" />
+    <ClCompile Include="..\classes\ScriptFuncs.cpp" />
+    <ClCompile Include="..\classes\ScrollLayer.cpp" />
+    <ClCompile Include="..\classes\ServerAgent.cpp" />
+    <ClCompile Include="..\classes\stdafx.cpp" />
+    <ClCompile Include="..\classes\TableView.cpp" />
+    <ClCompile Include="..\classes\UIManager.cpp" />
+    <ClCompile Include="..\classes\WebClient.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\classes\Audio.h" />
+    <ClInclude Include="..\classes\BasicPanel.h" />
+    <ClInclude Include="..\classes\EditBox.h" />
+    <ClInclude Include="..\classes\FightFangKuai.h" />
+    <ClInclude Include="..\classes\FightView.h" />
+    <ClInclude Include="..\classes\FileAssist.h" />
+    <ClInclude Include="..\classes\GameDef.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\classes\Layer.h" />
+    <ClInclude Include="..\classes\LayerColor.h" />
+    <ClInclude Include="..\classes\ScriptDef.h" />
+    <ClInclude Include="..\classes\ScrollLayer.h" />
+    <ClInclude Include="..\classes\ServerAgent.h" />
+    <ClInclude Include="..\classes\stdafx.h" />
+    <ClInclude Include="..\classes\TableView.h" />
+    <ClInclude Include="..\classes\UIManager.h" />
+    <ClInclude Include="..\classes\WebClient.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
